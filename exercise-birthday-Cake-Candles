@@ -1,0 +1,12 @@
+function birthdayCakeCandles(candles) {
+    let higher = 0;
+    let quantity = 1;
+    for(let i=0; i < candles.length ; i++){
+        if (candles[i] > higher){
+            higher = candles[i];
+        }
+        else if (candles[i] == higher){
+            quantity++;
+        }
+    }
+    return quantity;
