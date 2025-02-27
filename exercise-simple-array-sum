@@ -1,0 +1,11 @@
+// Simple Array Sum
+
+    function simpleArraySum(ar) {
+    
+    let listSum = 0;
+     
+     for(let i = 0; i <ar.length; i++){
+        listSum += + ar[i];
+     }
+     return listSum;
+    }
