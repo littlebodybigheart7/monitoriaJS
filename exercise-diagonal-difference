@@ -1,0 +1,13 @@
+// Diagonal Difference
+    
+    function diagonalDifference(arr) {
+    
+    let rightDiagonal = 0;
+    let leftDiagonal = 0;
+    
+    for(let i = 0; i < arr.length; i++){
+        rightDiagonal = rightDiagonal + arr[i][i];
+        leftDiagonal = leftDiagonal + arr[i][arr.length - i -1];
+        
+    }return Math.abs(rightDiagonal - leftDiagonal);
+    }
